@@ -72,7 +72,8 @@ body {
     text-align: center;
     font-size: 15px;
     margin-top: -10px;
-    transform: translateY(3vw);
+    position: relative;
+    bottom: 28vw;
 }
 
 .para-2 a {

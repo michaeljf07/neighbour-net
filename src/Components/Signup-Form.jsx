@@ -45,9 +45,6 @@ function SignupForm() {
                     <a href="#">Policy Privacy</a>
                 </p>
             </div>
-            <p className="para-2">
-                Already have an account? <Link to="/sign-up">Sign Up Here</Link>
-            </p>
         </div>
     );
 }
