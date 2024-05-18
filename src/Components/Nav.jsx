@@ -9,9 +9,9 @@ function Nav() {
             </style>
             <nav className="nav-bar">
                 <Link to="/about">Contact</Link>
-                <Link to=".signin">Sign In</Link>
-                <Link to="./about">About</Link>
-                <Link to="./home">Home</Link>
+                <Link to="/signin">Sign In</Link>
+                <Link to="/blog">Blog</Link>
+                <Link to="/">Home</Link>
             </nav>
         </div>
     );
