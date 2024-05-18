@@ -1,12 +1,20 @@
-import Nav from "./Nav.jsx";
-import Landing from "./Landing.jsx";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/home.jsx";
+import About from "./Pages/about.jsx";
+import Signin from "./Pages/sign-in.jsx";
+import Contact from "./Pages/contact.jsx";
 
 function App() {
     return (
-        <div className="App">
-            <Nav />
-            <Landing />
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/sign-in" element={<Signin />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
