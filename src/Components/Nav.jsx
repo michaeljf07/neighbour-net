@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Nav.css";
 
 function Nav() {
     return (
@@ -9,7 +10,7 @@ function Nav() {
             </style>
             <nav className="nav-bar">
                 <Link to="/about">Contact</Link>
-                <Link to="/signin">Sign In</Link>
+                <Link to="/sign-in">Sign In</Link>
                 <Link to="/blog">Blog</Link>
                 <Link to="/">Home</Link>
             </nav>
