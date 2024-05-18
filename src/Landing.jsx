@@ -1,4 +1,4 @@
-import LocalBusiness from "./assets/local-business-icon.png";
+import LocalBusiness from "./assets/local-business-image.jpg";
 
 function Landing() {
     return (
