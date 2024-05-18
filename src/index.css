@@ -1,0 +1,72 @@
+body {
+    font-family: Roboto;
+}
+
+.App {
+    overflow: hidden;
+}
+
+.nav-bar {
+    font-family: "Roboto";
+}
+
+.nav-bar a {
+    float: right;
+    color: #494949;
+    text-align: center;
+    padding: 1.5vw 1.5vw;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
+.nav-bar a:hover {
+    color: #3d30a2;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.title {
+    position: relative;
+    font-family: "Roboto";
+    font-size: 1.8vw;
+    margin-top: 10vw;
+    margin-left: 5vw;
+    color: #c54189;
+    word-wrap: break-word;
+    width: 50vw;
+}
+
+#description {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    text-align: left;
+    color: rgb(235, 235, 235);
+    position: absolute;
+    transform: translateY(-22vw);
+    margin-left: 5vw;
+}
+
+#get-started {
+    background-color: #f2e982;
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding: 1.5vw 2.5vw;
+    border: none;
+    border-radius: 12px;
+    position: absolute;
+    margin-left: 5vw;
+    transform: translateY(-10vw);
+}
+
+#get-started:hover {
+    cursor: pointer;
+    background-color: #fffcd8;
+}
+
+#local-business-icon {
+    float: right;
+    width: 35vw;
+    margin-right: 3vw;
+    border-radius: 40px;
+    transform: translateY(-35 vw);
+}
