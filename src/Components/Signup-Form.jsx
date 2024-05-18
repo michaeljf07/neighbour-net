@@ -1,7 +1,22 @@
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Signup-Form.css";
-import { Link } from "react-router-dom";
 
 function SignupForm() {
+    const navigate = useNavigate();
+    const [type, setType] = useState(""); // State to store the selected type
+
+    const handleTypeChange = (e) => {
+        setType(e.target.value); // Update the type state when dropdown selection changes
+    };
+
+    const handleSubmit = () => {
+        // Perform any necessary form validation or submission logic here
+        if (type === "Business") {
+            navigate("/sign-up/business");
+        }
+    };
+
     return (
         <div className="sign-up">
             <div className="signup-box">
@@ -23,7 +38,11 @@ function SignupForm() {
                     <input type="password" placeholder="" />
 
                     <label>Type of Account</label>
-                    <select name="Type" id="type">
+                    <select
+                        name="Type"
+                        id="type"
+                        onChange={handleTypeChange}
+                        value={type}>
                         <option value="None">--Select One Option--</option>
                         <option value="Individual">Individual</option>
                         <option value="Business">Business</option>
@@ -32,21 +51,20 @@ function SignupForm() {
                     <label>Neighbourhood</label>
                     <select name="Neighbourhood" id="neighbourhood">
                         <option value="None">--Select One Option--</option>
-                        <option value="Individual">Laurelwood</option>
-                        <option value="Business">Erbsville</option>
-                        <option value="Business">Maple Hills</option>
+                        <option value="Laurelwood">Laurelwood</option>
+                        <option value="Erbsvill">Erbsville</option>
+                        <option value="Maple Hills">Maple Hills</option>
                     </select>
 
-                    <input type="button" value="Submit" />
+                    <input
+                        type="button"
+                        value="Submit"
+                        onClick={handleSubmit}
+                    />
                 </form>
-                <p>
-                    By clicking the Sign Up button,you agree to our <br />
-                    <a href="#">Terms and Condition</a> and{" "}
-                    <a href="#">Policy Privacy</a>
-                </p>
             </div>
-            <p className="para-2">
-                Already have an account? <Link to="/sign-up">Sign Up Here</Link>
+            <p id="para-2">
+                Already have an account? <Link to="/sign-in">Sign In Here</Link>
             </p>
         </div>
     );

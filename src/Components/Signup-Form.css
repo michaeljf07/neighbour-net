@@ -4,10 +4,10 @@ body {
 
 .signup-box {
     width: 360px;
-    height: 620px;
+    height: 670px;
     margin: auto;
-    background-color: white;
-    border-radius: 3px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 15px;
 }
 
 .sign-up {
@@ -24,14 +24,14 @@ body {
 }
 
 .sign-up form {
-    width: 300px;
+    width: 20vw;
     margin-left: 20px;
 }
 
 .sign-up form label {
     display: flex;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 1.3vw;
 }
 
 .sign-up form input {
@@ -44,8 +44,8 @@ body {
 }
 
 .sign-up input[type="button"] {
-    width: 320px;
-    height: 35px;
+    width: 21vw;
+    height: 3vw;
     margin-top: 20px;
     border: none;
     background-color: #3d30a2;
@@ -63,18 +63,18 @@ body {
     font-size: 0.8vw;
 }
 
-.para-2 {
+#para-2 {
     text-align: center;
     font-size: 0.8vw;
     margin-top: 1vw;
-    transform: translateY(3vw);
 }
 
-.para-2 a {
+#para-2 a {
     color: #3d30a2;
 }
 
-#type {
+#type,
+#neighbourhood {
     border-radius: 8px;
     padding: 0.5vw 1vw;
 }
