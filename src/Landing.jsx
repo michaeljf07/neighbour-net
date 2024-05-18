@@ -2,9 +2,9 @@ import LocalBusiness from "./assets/local-business-image.jpg";
 
 function Landing() {
     return (
-        <div>
+        <div className="landing-page">
             <div className="title">
-                <h1>Find Local Businesses Near You</h1>
+                <p>Find Local Businesses Near You</p>
             </div>
             <svg
                 width="98vw"

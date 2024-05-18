@@ -25,15 +25,23 @@ body {
     font-weight: 500;
 }
 
+.landing-page {
+    margin-top: 10vw;
+}
+
 .title {
     position: relative;
     font-family: "Roboto";
-    font-size: 1.8vw;
-    margin-top: 10vw;
+    font-size: 5vw;
+    font-weight: 800;
     margin-left: 5vw;
     color: #c54189;
     word-wrap: break-word;
     width: 50vw;
+}
+
+.title p {
+    margin-bottom: 2vw;
 }
 
 #description {
