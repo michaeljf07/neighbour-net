@@ -2,26 +2,6 @@ body {
     font-family: Roboto;
 }
 
-.nav-bar {
-    font-family: "Roboto";
-    transform: translateY(-7vw);
-}
-
-.nav-bar a {
-    float: right;
-    color: #494949;
-    text-align: center;
-    padding: 1.5vw 1.5vw;
-    text-decoration: none;
-    font-size: 1.2vw;
-}
-
-.nav-bar a:hover {
-    color: #3d30a2;
-    cursor: pointer;
-    font-weight: 500;
-}
-
 .landing-page {
     margin-top: 8vw;
 }
