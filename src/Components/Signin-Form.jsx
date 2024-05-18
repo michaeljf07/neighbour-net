@@ -14,7 +14,7 @@ function SigninForm() {
                     <input type="button" value="Submit" />
                 </form>
             </div>
-            <p className="para-2">
+            <p className="no-account">
                 Don't have an account? <Link to="/sign-up">Sign Up Here</Link>
             </p>
         </div>
