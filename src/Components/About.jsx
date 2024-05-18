@@ -4,7 +4,7 @@ function About() {
     return (
         <div>
             <h1 id="title">About Us</h1>
-            <p text="text">
+            <p id="text">
                 At NeighbourhoodNet, our story is deeply rooted in community and
                 compassion. Inspired by the heartwarming tale of Gurshaan's
                 family friend, who faced adversity with their struggling
