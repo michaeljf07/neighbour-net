@@ -5,6 +5,7 @@ function Signup_Business() {
     const [formData, setFormData] = useState({
         name: "",
         address: "",
+        community: "",
         phoneNumber: "",
         website: "",
     });
@@ -49,6 +50,18 @@ function Signup_Business() {
                     value={formData.address}
                     onChange={handleInputChange}
                 />
+
+                <label>Community</label>
+                <select
+                    name="community"
+                    id="community"
+                    value={formData.community}
+                    onChange={handleInputChange}>
+                    <option value="None">--Select One Option--</option>
+                    <option value="Laurelwood">Laurelwood</option>
+                    <option value="Erbsville">Erbsville</option>
+                    <option value="Maple Hills">Maple Hills</option>
+                </select>
 
                 <label>Phone Number</label>
                 <input
