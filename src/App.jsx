@@ -7,6 +7,8 @@ import Contact from "./Pages/contact.jsx";
 
 function App() {
     return (
+        
+
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />

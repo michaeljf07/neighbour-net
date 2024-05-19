@@ -1,0 +1,12 @@
+{
+    "posts":
+    [
+        {
+            "user": "Bob",
+            "description": "AGGGH!",
+            "likes": 1,
+            "comments": 2,
+            "image_url": "Sample Images/Bob.webp"
+        }
+    ]
+}
