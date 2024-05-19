@@ -1,0 +1,20 @@
+.about {
+    margin-top: 5vw;
+    width: auto;
+}
+
+#title {
+    margin-left: 30vw;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+#text {
+    position: relative;
+    font-size: 1.3vw;
+    right: -15vw;
+    word-wrap: break-word;
+    line-height: 1.7vw;
+    width: 70vw;
+}
