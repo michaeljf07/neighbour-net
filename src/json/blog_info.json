@@ -1,0 +1,16 @@
+[
+    {
+        "user": "Emily",
+        "description": "I love this neighbourhood!",
+        "likes": 3,
+        "comments": 4,
+        "image_url": "Sample Images/Emily.jpeg"
+    },
+    {
+        "user": "Bob",
+        "description": "AGGGH! The GEESE!",
+        "likes": 1,
+        "comments": 2,
+        "image_url": "Sample Images/Bob.webp"
+    }
+]
