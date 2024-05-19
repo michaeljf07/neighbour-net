@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "./signup-business.css";
+import { useAuth } from "../AuthContext.jsx";
+import { Link, useNavigate } from "react-router-dom";
 
 function Signup_Business() {
+    const navigate = useNavigate();
+    const { login } = useAuth();
     const [formData, setFormData] = useState({
         name: "",
         address: "",
@@ -32,6 +36,8 @@ function Signup_Business() {
             if (response.ok) {
                 // Handle success
                 console.log("Signup successful");
+                login();
+                navigate("/blog");
             } else {
                 // Handle failure
                 console.error("Signup failed");

@@ -23,6 +23,7 @@ def signin():
 
 @app.route("/sign-up", methods = ['POST'])
 def signup():
+    return "yo"
     with open('neighbour-net/signin-backend/users.json', 'r') as file:
         users = json.load(file)
 
