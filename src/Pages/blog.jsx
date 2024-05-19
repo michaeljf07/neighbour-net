@@ -1,7 +1,19 @@
 import Nav from "../Components/Nav.jsx";
 import Blog_Title from "../Components/Blog-Title.jsx";
+import { useAuth } from "../AuthContext.jsx";
+import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 
 function Blog() {
+    const { isLoggedIn } = useAuth();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!isLoggedIn) {
+            navigate("/sign-in");
+        }
+    }, [isLoggedIn, navigate]);
+
     const componentsData = [
         {
             comments: 4,

@@ -1,8 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Nav.css";
 import Logo from "../assets/NeighbourhoodNet Logo.png";
+import { useAuth } from "../AuthContext.jsx";
 
 function Nav() {
+    const { isLoggedIn } = useAuth();
+    const navigate = useNavigate();
+
+    const handleSignOut = () => {
+        logout();
+        navigate("/");
+    };
+
     return (
         <div>
             <style>
@@ -17,7 +26,13 @@ function Nav() {
             </div>
             <nav className="nav-bar">
                 <Link to="/contact">Contact</Link>
-                <Link to="/sign-in">Sign In</Link>
+                {isLoggedIn ? (
+                    <Link to="/" onClick={handleSignOut}>
+                        Sign Out
+                    </Link>
+                ) : (
+                    <Link to="/sign-in">Sign In</Link>
+                )}
                 <Link to="/blog">Blog</Link>
                 <Link to="/">Home</Link>
             </nav>

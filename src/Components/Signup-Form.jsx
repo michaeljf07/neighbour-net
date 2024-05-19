@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useAuth } from "../AuthContext.jsx";
 import { Link, useNavigate } from "react-router-dom";
 import "./Signup-Form.css";
 
 function SignupForm() {
     const navigate = useNavigate();
+    const { login } = useAuth();
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -36,9 +38,12 @@ function SignupForm() {
             if (response.ok) {
                 // Handle success
                 console.log("Signup successful");
+                login();
                 // Redirect based on form data if needed
                 if (formData.type === "Business") {
                     navigate("/sign-up/business");
+                } else {
+                    navigate("/blog");
                 }
             } else {
                 // Handle failure
