@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 700;
+    margin-top: -3vw;
+    margin-left: 27vw;
+}
+
+.post-container {
+    border: 0.3vw solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 2vw;
+    padding: 2vw;
+    max-width: 60vw; /* Adjust the width as needed */
+    width: 100%; /* Ensure the container takes the full width available */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.post-user {
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.post-description {
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+
+.post-image {
+    max-width: 90%;
+    height: auto;
+    margin-top: 2vw;
+}
+
+.post-metadata {
+    color: #666;
+    font-size: 1.8vw;
+    margin-top: 1vw;
+}
+
+.feed-container {
+    max-width: 90vw;
+    margin-left: 18vw;
+}
