@@ -4,15 +4,29 @@ import "./Signup-Form.css";
 
 function SignupForm() {
     const navigate = useNavigate();
-    const [type, setType] = useState(""); // State to store the selected type
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+        type: "None",
+        neighbourhood: "None",
+    });
 
-    const handleTypeChange = (e) => {
-        setType(e.target.value); // Update the type state when dropdown selection changes
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
     };
 
     const handleSubmit = () => {
         // Perform any necessary form validation or submission logic here
-        if (type === "Business") {
+        console.log("Form data:", formData);
+        // Redirect based on form data if needed
+        if (formData.type === "Business") {
             navigate("/sign-up/business");
         }
     };
@@ -23,36 +37,70 @@ function SignupForm() {
                 <h1>Sign Up</h1>
                 <form>
                     <label>First Name</label>
-                    <input type="text" placeholder="" />
+                    <input
+                        type="text"
+                        name="firstName"
+                        placeholder=""
+                        value={formData.firstName}
+                        onChange={handleInputChange}
+                    />
 
                     <label>Last Name</label>
-                    <input type="text" placeholder="" />
+                    <input
+                        type="text"
+                        name="lastName"
+                        placeholder=""
+                        value={formData.lastName}
+                        onChange={handleInputChange}
+                    />
 
                     <label>Email</label>
-                    <input type="email" placeholder="" />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder=""
+                        value={formData.email}
+                        onChange={handleInputChange}
+                    />
 
                     <label>Password</label>
-                    <input type="password" placeholder="" />
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder=""
+                        value={formData.password}
+                        onChange={handleInputChange}
+                    />
 
                     <label>Confirm Password</label>
-                    <input type="password" placeholder="" />
+                    <input
+                        type="password"
+                        name="confirmPassword"
+                        placeholder=""
+                        value={formData.confirmPassword}
+                        onChange={handleInputChange}
+                    />
 
                     <label>Type of Account</label>
                     <select
-                        name="Type"
+                        name="type"
                         id="type"
-                        onChange={handleTypeChange}
-                        value={type}>
+                        value={formData.type}
+                        onChange={handleInputChange}>
                         <option value="None">--Select One Option--</option>
                         <option value="Individual">Individual</option>
                         <option value="Business">Business</option>
                     </select>
 
                     <label>Neighbourhood</label>
-                    <select name="Neighbourhood" id="neighbourhood">
+                    <select
+                        name="neighbourhood"
+                        id="neighbourhood"
+                        value={formData.neighbourhood}
+                        onChange={handleInputChange}>
                         <option value="None">--Select One Option--</option>
                         <option value="Laurelwood">Laurelwood</option>
-                        <option value="Erbsvill">Erbsville</option>
+                        <option value="Erbsville">Erbsville</option>
                         <option value="Maple Hills">Maple Hills</option>
                     </select>
 

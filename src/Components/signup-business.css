@@ -3,8 +3,8 @@ body {
 }
 
 .sign-up-business {
-    width: 360px;
-    height: 440px;
+    width: 24vw;
+    height: 29vw;
     margin: auto;
     border-radius: 15px;
     background-color: rgb(228, 228, 228);
@@ -12,12 +12,12 @@ body {
 
 .sign-up-business h1 {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 1vw;
 }
 
 .sign-up-business form {
     width: 20vw;
-    margin-left: 20px;
+    margin-left: 1.2vw;
 }
 
 .sign-up-business form label {
@@ -27,25 +27,25 @@ body {
 }
 
 .sign-up-business form input {
-    width: 100%;
-    padding: 7px;
+    width: 20.5vw;
+    padding: 0.5vw;
     border: none;
     border: 1px solid gray;
     border-radius: 6px;
     outline: none;
 }
 
-.sign-up-business input[type="button"] {
+.sign-up-business input[type="submit"] {
     width: 21vw;
     height: 3vw;
-    margin-top: 20px;
+    margin-top: 1vw;
     border: none;
     background-color: #3d30a2;
     color: white;
     font-size: 1.3vw;
 }
 
-.sign-up-business input[type="button"]:hover {
+.sign-up-business input[type="submit"]:hover {
     cursor: pointer;
     background-color: #5549ae;
 }

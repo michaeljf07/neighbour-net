@@ -3,23 +3,16 @@ body {
 }
 
 .login-box {
-    width: 360px;
-    height: 300px;
+    width: 24vw;
+    height: 19vw;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 1vw;
     background-color: rgb(228, 228, 228);
-}
-
-.sign-in {
-    width: 360px;
-    height: 280px;
-    margin: auto;
-    border-radius: 3px;
 }
 
 .sign-in h1 {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 1vw;
 }
 
 .sign-in h4 {
@@ -28,17 +21,17 @@ body {
 
 .sign-in form {
     width: 20vw;
-    margin-left: 20px;
+    margin-left: 1vw;
 }
 
 .sign-in form label {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1vw;
     font-size: 1.4vw;
 }
 
 .sign-in form input {
-    width: 100%;
+    width: 21vw;
     padding: 7px;
     border: none;
     border: 1px solid gray;
@@ -46,17 +39,17 @@ body {
     outline: none;
 }
 
-.sign-in input[type="button"] {
-    width: 21vw;
+.sign-in input[type="submit"] {
+    width: 22vw;
     height: 3vw;
-    margin-top: 20px;
+    margin-top: 1vw;
     border: none;
     background-color: #3d30a2;
     color: white;
     font-size: 1.3vw;
 }
 
-.sign-in input[type="button"]:hover {
+.sign-in input[type="submit"]:hover {
     cursor: pointer;
     background-color: #5549ae;
 }
@@ -64,7 +57,7 @@ body {
 .sign-in p {
     text-align: center;
     padding-top: 20px;
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 .no-account {

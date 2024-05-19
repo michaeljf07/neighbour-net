@@ -1,17 +1,51 @@
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import "./Signin-Form.css";
+import { Link } from "react-router-dom";
 
 function SigninForm() {
+    const [formData, setFormData] = useState({
+        email: "",
+        password: "",
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Form submitted"); // Add this line to check if handleSubmit is called
+        // Access the email and password from formData
+        const { email, password } = formData;
+        console.log("Email:", email);
+        console.log("Password:", password);
+    };
+
     return (
         <div className="sign-in">
             <div className="login-box">
                 <h1>Login</h1>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label>Email</label>
-                    <input type="email" placeholder="" />
+                    <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder=""
+                    />
                     <label>Password</label>
-                    <input type="password" placeholder="" />
-                    <input type="button" value="Submit" />
+                    <input
+                        type="password"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleChange}
+                        placeholder=""
+                    />
+                    <input type="submit" value="Submit" />
                 </form>
             </div>
             <p className="no-account">
