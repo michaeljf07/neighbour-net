@@ -20,8 +20,7 @@ function Signup_Business() {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Prevent default form submission behavior
-        // Send data to Flask backend
+        e.preventDefault();
         try {
             const response = await fetch("http://localhost:5000", {
                 method: "POST",
@@ -35,7 +34,6 @@ function Signup_Business() {
                 // Handle success
                 console.log("Signup successful");
                 navigate("/blog");
-                
             } else {
                 // Handle failure
                 console.error("Signup failed");

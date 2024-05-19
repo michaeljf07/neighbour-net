@@ -4,13 +4,11 @@ import React from "react";
 
 function Contact() {
     const handleSubmit = async (event) => {
-        // Prevent default form submission behavior
         event.preventDefault();
 
         // Retrieve form data
         const formData = new FormData(event.target);
 
-        // Get values from form fields
         const name = formData.get("firstName");
         const email = formData.get("email");
         const message = formData.get("message");
@@ -21,7 +19,6 @@ function Contact() {
             message: message,
         };
 
-        // Send data to Flask backend
         try {
             const response = await fetch("http://localhost:5000", {
                 method: "POST",
@@ -32,9 +29,8 @@ function Contact() {
             });
 
             if (response.ok) {
-                // Optionally, you can do something after successful submission
+                // pass
             } else {
-                // Handle failure
                 console.error("Failed to submit form");
             }
         } catch (error) {

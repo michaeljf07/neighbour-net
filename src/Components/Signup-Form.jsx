@@ -25,7 +25,6 @@ function SignupForm() {
     };
 
     const handleSubmit = async () => {
-        // Send data to Flask backend
         try {
             const response = await fetch("http://localhost:5000", {
                 method: "POST",
@@ -36,10 +35,9 @@ function SignupForm() {
             });
 
             if (response.ok) {
-                // Handle success
                 console.log("Signup successful");
                 login();
-                // Redirect based on form data if needed
+
                 if (formData.type === "Business") {
                     navigate("/sign-up/business");
                 } else {

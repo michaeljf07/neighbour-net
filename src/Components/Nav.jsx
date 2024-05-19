@@ -22,7 +22,7 @@ function Nav() {
                 <Link to="/">
                     <img id="logo" src={Logo}></img>
                 </Link>
-                <h1 id="company-name">NeighbourhoodNet</h1>
+                <h1 id="company-name">NeighbourhoodNET</h1>
             </div>
             <nav className="nav-bar">
                 <Link to="/contact">Contact</Link>

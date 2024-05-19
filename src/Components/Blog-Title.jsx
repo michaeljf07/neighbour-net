@@ -71,7 +71,6 @@ function Blog_Title() {
                         </div>
                     </div>
                 )}
-                {/* Render other cards here */}
             </div>
         </>
     );
