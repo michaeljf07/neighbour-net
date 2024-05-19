@@ -18,7 +18,7 @@ except json.JSONDecodeError:
 try:
     with open('src/json/blog_info.json', 'r') as f:
         write_data = json.load(f)
-    write_data['posts'].append(request_data['posts'][0])
+    write_data.append(request_data[0])
 
     with open('src/json/blog_info.json', 'w') as f:
         json.dump(write_data, f, indent=4)
@@ -26,15 +26,15 @@ try:
 except FileNotFoundError:
     print("Error: blog_info.json not found.")
 
-    write_data = {'posts': []}
+    write_data = {}
 
 except json.JSONDecodeError:
     print("Error: blog_info.json is not valid JSON.")
-    write_data = {'posts': []}
+    write_data = {}
 
 @blog.route("/blogs")
 def blogs():
-    random.shuffle(write_data['posts'])
+    random.shuffle(write_data)
     return jsonify(write_data)
 
 if __name__ == "__main__":
