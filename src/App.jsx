@@ -15,18 +15,6 @@ function App() {
     logout();
 
     return (
-Search
-        
-
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/blog" element={<Blog />} />
-                <Route path="/sign-in" element={<Signin />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes>
-        </BrowserRouter>
-
         <AuthProvider>
             <BrowserRouter>
                 <Routes>
@@ -43,7 +31,6 @@ Search
                 </Routes>
             </BrowserRouter>
         </AuthProvider>
-main
     );
 }
 

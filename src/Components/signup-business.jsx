@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./signup-business.css";
+import { useNavigate } from "react-router-dom";
 
 function Signup_Business() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: "",
         address: "",
@@ -32,6 +34,8 @@ function Signup_Business() {
             if (response.ok) {
                 // Handle success
                 console.log("Signup successful");
+                navigate("/blog");
+                
             } else {
                 // Handle failure
                 console.error("Signup failed");
