@@ -1,9 +1,11 @@
-import React, { useState } from "react";
 import "./Signin-Form.css";
 import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../AuthContext.jsx";
+import React, { useState } from "react";
 
 function SigninForm() {
     const navigate = useNavigate();
+    const { login } = useAuth();
     const [formData, setFormData] = useState({
         email: "",
         password: "",
@@ -34,6 +36,7 @@ function SigninForm() {
             if (response.ok) {
                 // Handle success
                 console.log("Login successful");
+                login();
                 navigate("/blog");
             } else {
                 // Handle failure
