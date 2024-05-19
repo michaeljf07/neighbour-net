@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import LocalBusiness from "../assets/local-business-image.jpg";
 
 function Landing() {
@@ -29,7 +30,11 @@ function Landing() {
                 enhancing the <br />
                 vitality and sustainability of neighborhoods.
             </p>
-            <button id="get-started">Get Started</button>
+            <Link to="/sign-in">
+                <button id="get-started" href="/sign-in">
+                    Get Started
+                </button>
+            </Link>
             <img id="local-business-icon" src={LocalBusiness}></img>
         </div>
     );

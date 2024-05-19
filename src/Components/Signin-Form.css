@@ -1,0 +1,75 @@
+body {
+    font-family: "Roboto";
+}
+
+.login-box {
+    width: 24vw;
+    height: 19vw;
+    margin: auto;
+    border-radius: 1vw;
+    background-color: rgb(228, 228, 228);
+}
+
+.sign-in h1 {
+    text-align: center;
+    padding-top: 1vw;
+}
+
+.sign-in h4 {
+    text-align: center;
+}
+
+.sign-in form {
+    width: 20vw;
+    margin-left: 1vw;
+}
+
+.sign-in form label {
+    display: flex;
+    margin-top: 1vw;
+    font-size: 1.4vw;
+}
+
+.sign-in form input {
+    width: 21vw;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+.sign-in input[type="submit"] {
+    width: 22vw;
+    height: 3vw;
+    margin-top: 1vw;
+    border: none;
+    background-color: #3d30a2;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.sign-in input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #5549ae;
+}
+
+.sign-in p {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1vw;
+}
+
+.no-account {
+    text-align: center;
+    font-size: 1vw;
+}
+
+.no-account a {
+    color: #3d30a2;
+}
+
+#type {
+    border-radius: 8px;
+    padding: 0.5vw 1vw;
+}
