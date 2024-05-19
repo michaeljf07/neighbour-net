@@ -3,7 +3,7 @@ import "../Components/Contact.css";
 import React from "react";
 
 function Contact() {
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         // Prevent default form submission behavior
         event.preventDefault();
 
@@ -21,7 +21,28 @@ function Contact() {
             message: message,
         };
 
-        console.log(formDataObject);
+        // Send data to Flask backend
+        try {
+            const response = await fetch(
+                "http://your-flask-backend.com/submit",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formDataObject),
+                }
+            );
+
+            if (response.ok) {
+                // Optionally, you can do something after successful submission
+            } else {
+                // Handle failure
+                console.error("Failed to submit form");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+        }
     };
 
     return (

@@ -15,13 +15,29 @@ function SigninForm() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted"); // Add this line to check if handleSubmit is called
-        // Access the email and password from formData
-        const { email, password } = formData;
-        console.log("Email:", email);
-        console.log("Password:", password);
+
+        // Send data to Flask backend
+        try {
+            const response = await fetch("http:localhost:5000", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                // Handle success
+                console.log("Login successful");
+            } else {
+                // Handle failure
+                console.error("Login failed");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
     };
 
     return (

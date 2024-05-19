@@ -22,10 +22,35 @@ function SignupForm() {
         });
     };
 
-    const handleSubmit = () => {
-        // Perform any necessary form validation or submission logic here
-        console.log("Form data:", formData);
-        // Redirect based on form data if needed
+    const handleSubmit = async () => {
+        // Send data to Flask backend
+        try {
+            const response = await fetch(
+                "http://your-flask-backend.com/signup",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
+            );
+
+            if (response.ok) {
+                // Handle success
+                console.log("Signup successful");
+                // Redirect based on form data if needed
+                if (formData.type === "Business") {
+                    navigate("/sign-up/business");
+                }
+            } else {
+                // Handle failure
+                console.error("Signup failed");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
+
         if (formData.type === "Business") {
             navigate("/sign-up/business");
         }
