@@ -1,0 +1,52 @@
+{
+    "John Smith": {
+        "email": "john.smith@example.com",
+        "phone": "+1234567890",
+        "neighborhood": "Downtown"
+    },
+    "Emily Johnson": {
+        "email": "emily.johnson@example.com",
+        "phone": "+1987654321",
+        "neighborhood": "Suburbia"
+    },
+    "Michael Williams": {
+        "email": "michael.williams@example.com",
+        "phone": "+1555555555",
+        "neighborhood": "Uptown"
+    },
+    "Emma Brown": {
+        "email": "emma.brown@example.com",
+        "phone": "+1777777777",
+        "neighborhood": "Riverside"
+    },
+    "James Jones": {
+        "email": "james.jones@example.com",
+        "phone": "+1666666666",
+        "neighborhood": "Hillside"
+    },
+    "Olivia Davis": {
+        "email": "olivia.davis@example.com",
+        "phone": "+1888888888",
+        "neighborhood": "Lakeview"
+    },
+    "William Miller": {
+        "email": "william.miller@example.com",
+        "phone": "+1999999999",
+        "neighborhood": "Greenwood"
+    },
+    "Ava Wilson": {
+        "email": "ava.wilson@example.com",
+        "phone": "+1444444444",
+        "neighborhood": "Westside"
+    },
+    "Alexander Garcia": {
+        "email": "alexander.garcia@example.com",
+        "phone": "+1333333333",
+        "neighborhood": "East End"
+    },
+    "Sophia Martinez": {
+        "email": "sophia.martinez@example.com",
+        "phone": "+1222222222",
+        "neighborhood": "Downtown"
+    }
+}
