@@ -7,7 +7,6 @@ CORS(app)
 #Sign in page
 @app.route("/sign-in", methods = ['POST'])
 def signin():
-    return "Yo"
     with open('neighbour-net/signin-backend/users.json', 'r') as file:
         users = json.load(file)
 
@@ -37,9 +36,6 @@ def signup():
         json.dump(users, file, indent=4)
     print("New User Made")
     return "User created", 201
-
-if __name__ == "__main__":
-    app.run(debug=True)
 
 
 if __name__ == "__main__":

@@ -7,21 +7,21 @@
     font-weight: 700;
     margin-top: -3vw;
     margin-bottom: 2vw;
-    margin-left: 27vw;
 }
 
 #neighbourhood-title {
-    margin-bottom: 0vw;
+    margin-bottom: 0;
+    margin-left: 27vw;
 }
 
 .post-container {
-    border: 0.3vw solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 15px;
     margin-bottom: 2vw;
     padding: 2vw;
-    max-width: 60vw; /* Adjust the width as needed */
-    width: 100%; /* Ensure the container takes the full width available */
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    max-width: 60vw;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .post-user {
@@ -60,7 +60,7 @@
     width: 20vw;
     padding: 1vw;
     font-size: 1.3vw;
-    border: 0.2vw solid #ccc;
+    border: 2px solid #ccc;
 }
 
 #search-button {
@@ -68,7 +68,7 @@
     font-size: 1.3vw;
     background-color: #007bff;
     color: #fff;
-    border: 0.2vw solid #007bff;
+    border: 2px solid #007bff;
     cursor: pointer;
     transition: background-color 0.3s;
 }

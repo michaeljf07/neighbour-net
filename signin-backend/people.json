@@ -1,23 +1,22 @@
 {
-        "pauligwe10@gmail.com":{
-            "firstName": "Paul",
-            "lastName": "Igwe",
-            "neighbourhood": "Laurelwood"
-        },
-        "michael2007@gmail.com": {
-            "firstName": "Micael",
-            "lastName": "Ferreira",
-            "neighbourhood": "Erbsville"
-        },
-        "HawkHacksWinner@gmail.com" : {
-            "firstName": "Gears",
-            "lastName": "Team",
-            "neighbourhood": "Laurelwood"
-        },
-        "emilliekard@gmail.com": {
-            "firstName": "Emillie",
-            "lastName": "Kard",
-            "neighbourhood": "Maple Hills"
-        }
-    
+    "pauligwe10@gmail.com": {
+        "firstName": "Paul",
+        "lastName": "Igwe",
+        "neighbourhood": "Laurelwood"
+    },
+    "michael2007@gmail.com": {
+        "firstName": "Micael",
+        "lastName": "Ferreira",
+        "neighbourhood": "Erbsville"
+    },
+    "HawkHacksWinner@gmail.com": {
+        "firstName": "Gears",
+        "lastName": "Team",
+        "neighbourhood": "Laurelwood"
+    },
+    "emilliekard@gmail.com": {
+        "firstName": "Emillie",
+        "lastName": "Kard",
+        "neighbourhood": "Maple Hills"
+    }
 }

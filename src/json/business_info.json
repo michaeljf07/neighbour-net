@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "Smith Burger CO.",
+        "Phone": "123-456-7890",
+        "Website": "SmithBurg.com",
+        "location": "415 Constega Drive Waterloo "
+    },
+    {
+        "Name": "Jones Bakery",
+        "Phone": "987-654-3210",
+        "Website": "JonesBakery.com",
+        "location": "123 Baker Street, Toronto"
+    },
+    {
+        "Name": "Tech Innovators Inc.",
+        "Phone": "555-123-4567",
+        "Website": "TechInnovators.com",
+        "location": "1000 Innovation Way, Ottawa"
+    },
+    {
+        "Name": "Green Grocers",
+        "Phone": "444-555-6666",
+        "Website": "GreenGrocers.com",
+        "location": "789 Market Lane, Vancouver"
+    },
+    {
+        "Name": "Blue Ocean Travel",
+        "Phone": "333-222-1111",
+        "Website": "BlueOceanTravel.com",
+        "location": "456 Ocean Drive, Halifax"
+    }
+]

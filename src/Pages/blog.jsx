@@ -31,10 +31,10 @@ function Blog() {
         },
         {
             comments: 2,
-            description: "AGGGH!",
-            image_url: "Sample Images/Bob.webp",
+            description: "A family of 5 spotted at Laurier!",
+            image_url: "Sample Images/Geese.jpg",
             likes: 1,
-            user: "Oliver",
+            user: "Vicous Geese Seen!",
         },
     ];
 
