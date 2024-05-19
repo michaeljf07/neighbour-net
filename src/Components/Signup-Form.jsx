@@ -26,7 +26,7 @@ function SignupForm() {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch("http://localhost:5000", {
+            const response = await fetch("http://localhost:5000/sign-up", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
