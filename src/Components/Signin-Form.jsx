@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Signin-Form.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SigninForm() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         email: "",
         password: "",
@@ -21,17 +22,19 @@ function SigninForm() {
 
         // Send data to Flask backend
         try {
-            const response = await fetch("http://localhost:5000", {
+            const response = await fetch("http://localhost:5000/sign-in", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify(formData),
+                mode: "cors",
             });
 
             if (response.ok) {
                 // Handle success
                 console.log("Login successful");
+                navigate("/blog");
             } else {
                 // Handle failure
                 console.error("Login failed");

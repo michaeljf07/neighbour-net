@@ -1,6 +1,5 @@
 import Nav from "../Components/Nav.jsx";
 import Blog_Title from "../Components/Blog-Title.jsx";
-import React from "react";
 
 function Blog() {
     const componentsData = [
@@ -13,7 +12,7 @@ function Blog() {
         },
         {
             comments: 2,
-            description: "AGGGH!",
+            description: "Test description!?",
             image_url: "Sample Images/Bob.webp",
             likes: 1,
             user: "Bob",
@@ -23,7 +22,7 @@ function Blog() {
             description: "AGGGH!",
             image_url: "Sample Images/Bob.webp",
             likes: 1,
-            user: "Bob",
+            user: "Oliver",
         },
     ];
 
