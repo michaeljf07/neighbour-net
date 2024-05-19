@@ -3,19 +3,12 @@ body {
 }
 
 .signup-box {
-    width: 360px;
-    height: 620px;
+    width: 24vw;
+    height: 44vw;
     margin: auto;
-    background-color: white;
-    border-radius: 3px;
-}
-
-.sign-up {
-    width: 360px;
-    height: 280px;
-    margin: auto;
-    border-radius: 3px;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
+    border-radius: 15px;
+    transform: translateY(-3vw);
 }
 
 .sign-up h1 {
@@ -24,19 +17,19 @@ body {
 }
 
 .sign-up form {
-    width: 300px;
-    margin-left: 20px;
+    width: 20vw;
+    margin-left: 1.2vw;
 }
 
 .sign-up form label {
     display: flex;
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 1vw;
+    font-size: 1.3vw;
 }
 
 .sign-up form input {
     width: 100%;
-    padding: 7px;
+    padding: 00.5vw;
     border: none;
     border: 1px solid gray;
     border-radius: 6px;
@@ -44,13 +37,13 @@ body {
 }
 
 .sign-up input[type="button"] {
-    width: 320px;
-    height: 35px;
-    margin-top: 20px;
+    width: 21vw;
+    height: 3vw;
+    margin-top: 1vw;
     border: none;
     background-color: #3d30a2;
     color: white;
-    font-size: 18px;
+    font-size: 1.3vw;
 }
 
 .sign-up input[type="button"]:hover {
@@ -63,18 +56,18 @@ body {
     font-size: 0.8vw;
 }
 
-.para-2 {
+#para-2 {
     text-align: center;
     font-size: 0.8vw;
-    margin-top: 1vw;
-    transform: translateY(3vw);
+    margin-top: -2vw;
 }
 
-.para-2 a {
+#para-2 a {
     color: #3d30a2;
 }
 
-#type {
+#type,
+#neighbourhood {
     border-radius: 8px;
     padding: 0.5vw 1vw;
 }

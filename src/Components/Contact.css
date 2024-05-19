@@ -1,0 +1,65 @@
+body {
+    font-family: "Roboto";
+}
+
+.contact-us {
+    width: 24vw;
+    height: 28vw;
+    margin: auto;
+    background-color: rgb(228, 228, 228);
+    border-radius: 15px;
+    transform: translateY(-3vw);
+}
+
+.contact-us h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.contact-us form {
+    width: 20vw;
+    margin-left: 1.2vw;
+}
+
+.contact-us form label {
+    display: flex;
+    margin-top: 1vw;
+    font-size: 1.3vw;
+}
+
+.contact-us form input,
+#message {
+    font-family: "Roboto";
+    width: 100%;
+    padding: 00.5vw;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    resize: none;
+}
+
+#message {
+    height: 5vw;
+    word-wrap: break-word;
+}
+
+.contact-us input[type="submit"] {
+    width: 21vw;
+    height: 3vw;
+    margin-top: 1vw;
+    border: none;
+    background-color: #3d30a2;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.contact-us input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #5549ae;
+}
+
+.contact-us p {
+    text-align: center;
+    font-size: 0.8vw;
+}
