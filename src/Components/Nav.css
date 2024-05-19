@@ -1,3 +1,12 @@
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+#company-name {
+    font-size: 1.5vw;
+}
+
 .nav-bar {
     font-family: "Roboto";
     transform: translateY(-7vw);
@@ -16,4 +25,10 @@
     color: #3d30a2;
     cursor: pointer;
     font-weight: 500;
+}
+
+#logo {
+    width: 6.6vw;
+    padding: 1vw;
+    border-radius: 80px;
 }
