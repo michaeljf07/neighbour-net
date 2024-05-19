@@ -67,6 +67,7 @@ function Blog_Title() {
                             <p>Email: {searchResult.email}</p>
                             <p>Phone: {searchResult.phone}</p>
                             <p>Neighborhood: {searchResult.neighborhood}</p>
+                            <img src={searchResult.image}></img>
                         </div>
                     </div>
                 )}

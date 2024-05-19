@@ -2,51 +2,61 @@
     "John Smith": {
         "email": "john.smith@example.com",
         "phone": "+1234567890",
-        "neighborhood": "Downtown"
+        "neighborhood": "Downtown",
+        "image": "Sample Images/John Smith.jpg"
     },
     "Emily Johnson": {
         "email": "emily.johnson@example.com",
         "phone": "+1987654321",
-        "neighborhood": "Suburbia"
+        "neighborhood": "Suburbia",
+        "image": "Sample Images/Emily Johnson.jpg"
     },
     "Michael Williams": {
         "email": "michael.williams@example.com",
         "phone": "+1555555555",
-        "neighborhood": "Uptown"
+        "neighborhood": "Uptown",
+        "image": "Sample Images/Michael Williams.jpg"
     },
     "Emma Brown": {
         "email": "emma.brown@example.com",
         "phone": "+1777777777",
-        "neighborhood": "Riverside"
+        "neighborhood": "Riverside",
+        "image": "Sample Images/Emma Brown.png"
     },
     "James Jones": {
         "email": "james.jones@example.com",
         "phone": "+1666666666",
-        "neighborhood": "Hillside"
+        "neighborhood": "Hillside",
+        "image": "Sample Images/James Jones.jpg"
     },
     "Olivia Davis": {
         "email": "olivia.davis@example.com",
         "phone": "+1888888888",
-        "neighborhood": "Lakeview"
+        "neighborhood": "Lakeview",
+        "image": "Sample Images/Olivia Davis.jpg"
     },
     "William Miller": {
         "email": "william.miller@example.com",
         "phone": "+1999999999",
-        "neighborhood": "Greenwood"
+        "neighborhood": "Greenwood",
+        "image": "Sample Images/William Miller.png"
     },
     "Ava Wilson": {
         "email": "ava.wilson@example.com",
         "phone": "+1444444444",
-        "neighborhood": "Westside"
+        "neighborhood": "Westside",
+        "image": "Sample Images/Ava Wilson.jpg"
     },
     "Alexander Garcia": {
         "email": "alexander.garcia@example.com",
         "phone": "+1333333333",
-        "neighborhood": "East End"
+        "neighborhood": "East End",
+        "image": "Sample Images/Alexander Garcia.jpg"
     },
-    "Sophia Martinez": {
-        "email": "sophia.martinez@example.com",
+    "Ice Cream Store": {
+        "email": "icecream@example.com",
         "phone": "+1222222222",
-        "neighborhood": "Downtown"
+        "neighborhood": "Laurenwood",
+        "image": "Sample Images/Ice Cream Store.jpg"
     }
 }

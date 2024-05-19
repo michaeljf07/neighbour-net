@@ -22,6 +22,7 @@
     max-width: 60vw;
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden; /* Ensure that any overflowing content is hidden */
 }
 
 .post-user {
@@ -34,10 +35,13 @@
     font-size: 1.5vw;
 }
 
-.post-image {
-    max-width: 90%;
-    height: auto;
-    margin-top: 2vw;
+.post-description img {
+    max-width: 100%; /* Ensure the image width fits within its container */
+    max-height: 100%; /* Ensure the image height fits within its container */
+    object-fit: contain; /* Ensure the entire image fits within the container */
+    display: block; /* Remove any potential extra space */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px; /* Apply border radius to the image */
 }
 
 .post-metadata {
