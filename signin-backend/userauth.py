@@ -31,5 +31,8 @@ def signup():
     with open('neighbour-net/signin-backend/users.json', 'w') as file:
         json.dump(users, file, indent=4)
 
+if __name__ == "__main__":
+    app.run(debug=True)
+
 
 
