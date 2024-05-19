@@ -17,11 +17,28 @@ function Signup_Business() {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault(); // Prevent default form submission behavior
-        // Perform any necessary form validation or submission logic here
-        console.log("Form data:", formData);
-        // You can now use formData as needed, such as sending it to the backend
+        // Send data to Flask backend
+        try {
+            const response = await fetch("http://localhost:5000", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                // Handle success
+                console.log("Signup successful");
+            } else {
+                // Handle failure
+                console.error("Signup failed");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
     };
 
     return (
